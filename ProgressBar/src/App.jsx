@@ -1,30 +1,30 @@
-import { useState } from "react";
+
 import "./App.css";
-
+import ProgressBar from './Components/ProgerssBar'
 function App() {
-  const [name, setName] = useState("");
+  // const [name, setName] = useState("");
 
-  const [email, setEmail] = useState("");
+  // const [email, setEmail] = useState("");
 
-  const [password, setPassword] = useState("");
+  // const [password, setPassword] = useState("");
 
-  let count = 0;
+  // let count = 0;
 
-  if (name) {
-    count++;
-  }
-  if (email) {
-    count++;
-  }
-  if (password) {
-    count++;
-  }
+  // if (name) {
+  //   count++;
+  // }
+  // if (email) {
+  //   count++;
+  // }
+  // if (password) {
+  //   count++;
+  // }
 
-  let progressBar = (count / 3) * 100;
+  // let progressBar = (count / 3) * 100;
 
   return (
     <>
-      <div style={{width:"500px"}}>
+      {/* <div style={{width:"500px"}}>
         <div
           style={{ widht: "300px", height: "20px", border: "1px solid Black" }}
         >
@@ -60,13 +60,15 @@ function App() {
 
       <br />
       <br />
-
+      
       <input
         type="text"
         placeholder="enter a password "
         value={password}
         onChange={(e) => setPassword(e.target.value)}
-      />
+      /> */}
+
+      <ProgressBar/>
     </>
   );
 }
